@@ -7,6 +7,9 @@ export default function TopNavbar() {
     let location = useLocation();
     useEffect(()=> {
         switch (location.pathname){
+            case '/':
+              document.title = "Sahajayoga Paratwada | Enlighten yourself with Sahajayoga";
+              break;
             case '/sahajyoga':
               document.title = "The only way to change your life";
               break;
