@@ -4,13 +4,10 @@ import benefits from '../images/Benefits_Of_Sahajyoga.jpg'
 import GoForward from './GoForward'
 
 const Benefits = () => {
-    // const goToTop = () => {
-    //     window.scrollTo(0, 0)
-    // }
+    
     return (
         <Container>
             <img src={benefits} alt="" className='img-fluid border border-danger' />
-
             <h1 className='text-danger my-3 fw-bold'>नियमित सहजयोगाचे फायदे :-</h1>
 
             <Container fluid className="lead" style={{textAlign: "justify"}}>

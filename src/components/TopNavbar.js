@@ -7,9 +7,6 @@ export default function TopNavbar() {
     let location = useLocation();
     useEffect(()=> {
         switch (location.pathname){
-            case '/':
-              document.title = "Sahajyoga Paratwada | The official website";
-              break;
             case '/sahajyoga':
               document.title = "The only way to change your life";
               break;
@@ -52,6 +49,10 @@ export default function TopNavbar() {
             case '/nadi/sushumna':
               document.title = "Sushumna Nadi"
               break;
+            case '/about':
+              document.title = "Know more about the shri mata ji Nirmala Devi"
+            case '/contact':
+              document.title = "Get in touch with us"
             default:
               document.title = "404 | Page Not Found"
 
@@ -69,19 +70,19 @@ export default function TopNavbar() {
             <Link className={`nav-link ${location.pathname === "/subtlesystem"? "active": ""}`} to="/subtlesystem">सूक्ष्म शरीर</Link>
             <Link className={`nav-link ${location.pathname === "/kundalini"? "active": ""}`} to="/kundalini">कुण्डलिनी</Link>
             <NavDropdown title="७ चक्रे" id="chakras-nav-dropdown">
-              <Link className= "dropdown-item" to="chakras/mooladhar">mooladhar</Link>
-              <Link className= "dropdown-item" to="chakras/swadhishthan">swadhishthan</Link>
-              <Link className= "dropdown-item" to="chakras/nabhi">nabhi</Link>
-              <Link className= "dropdown-item" to="chakras/anahat">anahat</Link>
-              <Link className= "dropdown-item" to="chakras/vishuddhi">vishuddhi</Link>
-              <Link className= "dropdown-item" to="chakras/aagya">aagya</Link>
-              <Link className= "dropdown-item" to="chakras/sahastrar">sahastrar</Link>
+              <Link className= "dropdown-item" to="chakras/mooladhar">मूलाधार चक्र</Link>
+              <Link className= "dropdown-item" to="chakras/swadhishthan">स्वाधीष्ठान चक्र</Link>
+              <Link className= "dropdown-item" to="chakras/nabhi">नाभी चक्र</Link>
+              <Link className= "dropdown-item" to="chakras/anahat">अनाहत चक्र</Link>
+              <Link className= "dropdown-item" to="chakras/vishuddhi">विशुद्धी चक्र</Link>
+              <Link className= "dropdown-item" to="chakras/aagya">आज्ञा चक्र</Link>
+              <Link className= "dropdown-item" to="chakras/sahastrar">सहस्रार चक्र</Link>
             </NavDropdown>
 
             <NavDropdown title="३ नाड्या" id="nadi-nav-dropdown">
-              <Link className='dropdown-item' to="nadi/ida">ida</Link>
-              <Link className='dropdown-item' to="nadi/pingala">pingala</Link>
-              <Link className='dropdown-item' to="nadi/sushumna">sushumna</Link>
+              <Link className='dropdown-item' to="nadi/ida">ईडा नाडी</Link>
+              <Link className='dropdown-item' to="nadi/pingala">पिंगला नाडी</Link>
+              <Link className='dropdown-item' to="nadi/sushumna">सुषुम्ना नाडी</Link>
             </NavDropdown>
           </Nav>
           <Nav>

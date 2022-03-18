@@ -6,7 +6,7 @@ import GoForward from './GoForward'
 const Sahajyoga = () => {
 
     return (
-        <Container className='' >
+        <Container>
             <img src={meditation} alt="" className='img-fluid border border-danger' width="100%" />
             <h1 className='text-danger text-center my-4 fw-bold'>'सहजयोग' म्हणजे काय ?</h1>
             <Container fluid className="lead" style={{ textAlign: "justify" }}>
@@ -33,9 +33,6 @@ const Sahajyoga = () => {
             </Container>
 
             <GoForward page="/benefits" title="सहजयोगाचे फायदे जाणून घेण्यासाठी येथे क्लिक करा" />
-
-            {/* Using /benefits will load the localhost/benefits 
-            and using only benefits will load localhost/sahajyoga/benefits */}
         </Container >
     )
 }

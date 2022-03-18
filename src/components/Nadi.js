@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Card, Nav} from 'react-bootstrap'
+import { Container, Card, Nav } from 'react-bootstrap'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import GoForward from './GoForward';
 
@@ -7,7 +7,7 @@ import GoForward from './GoForward';
 const Nadi = () => {
     let location = useLocation();
     return (
-        <Container style={{minHeight:'37vh'}}>
+        <Container style={{ minHeight: '37vh' }}>
             <Card border='danger'>
                 <Card.Header>
                     <Nav variant="tabs" className='row' activeKey="mooladhar">

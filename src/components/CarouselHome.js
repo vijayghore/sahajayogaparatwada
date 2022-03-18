@@ -8,8 +8,6 @@ import carousel03 from '../images/carousel03.jpg'
 import carousel04 from '../images/carousel04.jpg'
 import carousel05 from '../images/carousel05.jpg'
 
-
-
 const CarouselHome = () => {
     return (
         <Carousel variant="dark">

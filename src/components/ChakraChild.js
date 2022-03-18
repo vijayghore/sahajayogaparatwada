@@ -73,7 +73,6 @@ const ChakraChild = (props) => {
           <img src={props.img} alt={props.title} />
         </Col>
       </Row>
-
     </>
   )
 }
