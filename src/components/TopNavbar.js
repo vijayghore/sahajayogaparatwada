@@ -51,8 +51,10 @@ export default function TopNavbar() {
               break;
             case '/about':
               document.title = "Know more about the shri mata ji Nirmala Devi"
+              break;
             case '/contact':
               document.title = "Get in touch with us"
+              break;
             default:
               document.title = "404 | Page Not Found"
 
